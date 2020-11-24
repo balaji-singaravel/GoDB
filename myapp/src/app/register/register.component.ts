@@ -30,7 +30,8 @@ export class RegisterComponent implements OnInit {
       gender: [null, Validators.required],
       address: [null,Validators.required],
       password: [null, [Validators.required, Validators.minLength(8)]],
-      confirmPassword: [null, [Validators.required, Validators.minLength(8)]]
+      confirmPassword: [null, [Validators.required, Validators.minLength(8)]],
+      file: [null]
     }, {
       validators: this.password.bind(this)
     });

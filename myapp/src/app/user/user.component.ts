@@ -21,6 +21,10 @@ export class UserComponent implements OnInit {
   }
 
 
+url(url){
+  return 'file:///' + url;
+}
+
   onLogout(){
     localStorage.clear();
     this.router.navigate(['/Login']);
