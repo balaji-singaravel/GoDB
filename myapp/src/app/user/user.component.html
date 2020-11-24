@@ -1,0 +1,50 @@
+<div style="    
+color: #fff;
+height: 70px;
+padding: 20px;
+font-size: larger;" class="bg-primary">
+
+  GoDB Tech
+
+
+  <div style="float: right; " (click)="onLogout()" > Logout</div>
+
+</div>
+<div style="height: 50px;
+padding: 10px;
+font-size: larger;
+background: #fff;">
+  User Management
+
+
+  <button style="float: right; " title="Add New" class="btn-primary btn">+</button>
+
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Address</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of dataList; index as i">
+      <th scope="row">{{i+1}}</th>
+      <td>{{data.firstName}}</td>
+      <td>{{data.lastName}}</td>
+      <td>{{data.email}}</td>
+      <td>{{data.gender}}</td>
+      <td>{{data.mobile}}</td>
+      <td>{{data.address}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
