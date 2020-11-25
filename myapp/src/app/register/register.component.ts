@@ -49,6 +49,7 @@ export class RegisterComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
     if (this.registerForm.valid) {
+      console.log(this.registerForm.value)
       let dataList =   localStorage.getItem("data");
       if(dataList == null || dataList == undefined){
         let data = [this.registerForm.value];

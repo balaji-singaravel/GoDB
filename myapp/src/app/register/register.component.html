@@ -58,7 +58,7 @@
                                             class="form-control"
                                             [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
                                         <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
-                                            <div *ngIf="f.lastName.errors.required">First Name is required</div>
+                                            <div *ngIf="f.lastName.errors.required">Last Name is required</div>
                                         </div>
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@
                                         <input class="form-control" formControlName="email" placeholder="Email"
                                             type="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
                                         <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                                            <div *ngIf="f.email.errors.required">First Name is required</div>
+                                            <div *ngIf="f.email.errors.required"> Email is required</div>
                                         </div>
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@
                                             placeholder="Mobile Number" type="number"
                                             [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }">
                                         <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">
-                                            <div *ngIf="f.mobile.errors.required">First Name is required</div>
+                                            <div *ngIf="f.mobile.errors.required">Mobile Number is required</div>
                                         </div>
                                     </div>
 
@@ -126,7 +126,7 @@
                                             id="exampleFormControlTextarea2" rows="3"
                                             [ngClass]="{ 'is-invalid': submitted && f.address.errors }"></textarea>
                                         <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
-                                            <div *ngIf="f.address.errors.required">First Name is required</div>
+                                            <div *ngIf="f.address.errors.required">Address is required</div>
                                         </div>
                                     </div>
                                 </div>
@@ -154,9 +154,8 @@
                                             placeholder=" Confrim Password" class="form-control"
                                             [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" />
                                         <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
-                                            <div *ngIf="f.confirmPassword.errors.required">Password is required</div>
-                                            <div *ngIf="f.confirmPassword.errors.minlength">Password must be at least 6
-                                                characters</div>
+                                            <div *ngIf="f.confirmPassword.errors.required"> Confirm Password is required</div>
+                                            
                                         </div>
                                     </div>
                                 </div>
